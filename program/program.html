@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script> particlesJS.load('particles-js', '/particles.json', function() {
+        console.log('callback - particles.js config loaded'); });
+      </script>
+      <script src="../refresh.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+                                 <!-- Bootstrap js plugin -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+crossorigin="anonymous"></script>
+                                     <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d3db143f9a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="program.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <div class ="fullBody">
+  <div id="particles-js"></div>
+  <section id="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- <span class="navbar-brand">
+        <a class="home-page" href="../index.html">
+        Dhiraj Magdum
+        </a>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+        </li>
+    </ul>
+  </section>
+  <section id="programming-designs">
+    <div class="programming-title"><h1 class="programming">Game Projects</h1></div>
+
+    <!-- ROBO BRAWL -->
+    <div>
+      <video class="game-vid" poster="" controls>
+      <source src="Videos/RoboBrawl.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="game-title1">
+      <div class="github1"> 
+        <a href="https://github.com/yogesh28-git/Robo-Brawl"><i class="logo github fab fa-github-square"></i></a>
+      </div>
+      <div class="game-title">ROBO BRAWL (Unity, C#)</div>      
+    </div> 
+      <br>
+    <div class="game-description">
+     <ul>
+      <li>3D shooter action game.</li>
+      <li>MVC Pattern: Player and Enemy has Model, View and Controller.</li>
+      <li>Singleton Pattern: Services like UI, GameManager, AudioManager, PlayerService are created as Singletons.</li>
+      <li>State Machine Pattern: Enemy AI with states PATROL, CHASE, ATTACK.</li>
+      <li>Navmesh was used for enemies chasing the player.</li>
+      <li>Object Pooling: Small enemies and bullets are made available when required using object pooling.</li>
+      <li>Observer Pattern: OnGameOver, OnGameStart, OnGameWin, OnGameLost etc are some examples of custom events used.</li>
+     </ul>
+    </div>
+    <hr class="hr">
+
+    <!-- CHEST SYSTEM -->
+    <div>
+      <video class="game-vid" poster="" controls>
+      <source src="Videos/ChestSystem.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="game-title1">
+      <div class="github1"> 
+        <a href="https://github.com/yogesh28-git/Chest-System"><i class="logo github fab fa-github-square"></i></a>
+      </div>
+      <div class="game-title">CHEST SYSTEM (Unity, C#)</div>      
+    </div> 
+      <br>
+    <div class="game-description">
+      <ul>
+        <li>A Chest System similar to Clash Royale game.</li>
+        <li>Scriptable objects: Different types of chest implemented using scriptable objects</li>
+        <li>They are COMMON, RARE, MYTHIC, LEGENDARY each with a different rarity and a different range of rewards</li>
+        <li>MVC Pattern: Chests implemented using Model, View and Controller</li>
+        <li>Singleton Pattern: Services like Chest Service, UI Service etc are created as Singletons.</li>
+        <li>State Machine Pattern: The button on chest behaves differently under different states like LOCKED, UNLOCKING, UNLOCKED states</li>
+      </ul>
+    </div>
+    <hr class="hr">
+
+    <!-- COWARDLY HUNTER -->
+    <div>
+      <video class="game-vid" poster="" controls>
+      <source src="Videos/CowardlyHunter.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="game-title1">
+      <div class="github1"> 
+        <a href="https://github.com/yogesh28-git/Cowardly-Hunter"><i class="logo github fab fa-github-square"></i></a>
+      </div>
+      <div class="game-title">COWARDLY HUNTER (Unity, C#)</div>      
+    </div> 
+      <br>
+    <div class="game-description">
+      <ul>
+        <li>Side scrolling and infinite runner, background with parallax effect.</li>
+        <li>Spawning trees, coins and enemy at random.</li>
+        <li>Shooting of arrow with particle effects.</li>
+        <li>Player detection and alert circle around the tiger implemented.</li>
+        <li>Animations for all characters.</li>
+        <li>Different game win and loss conditions implemented.</li>
+        <li>Singlton Pattern: Singleton used in Audio Manager.</li>
+      </ul>
+    </div>
+    <hr class="hr">
+
+    <!-- SNAKE MASTER -->
+    <div>
+      <video class="game-vid" poster="" controls>
+      <source src="Videos/SnakeMaster.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="game-title1">
+      <div class="github1"> 
+        <a href="https://github.com/yogesh28-git/SnakeMaster"><i class="logo github fab fa-github-square"></i></a>
+      </div>
+      <div class="game-title">SNAKE MASTER (Unity, C#)</div>      
+    </div> 
+      <br>
+    <div class="game-description">
+      <ul>
+        <li>Regular single-player mode </li>
+        <ul>
+          <li>Two types of food. Mass gainer food that increases length and score and Mass burner food that decreases length and score</li>
+          <li>Special powerups like Shield, Score doubler, Speed doubler.</li>
+        </ul>
+        <li>Death Match mode where two snakes compete each other.</li>
+        <ul>
+          <li>The snake that bites its opponent snake wins.</li>
+          <li>When snake eats food, the score increases and length of the other snake increases</li>
+        </ul>
+      </ul>
+    </div>
+    <hr class="hr">
+
+     <!-- MINE SWEEPER -->
+     <div>
+      <video class="game-vid" poster="" controls>
+      <source src="Videos/MineSweeper.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="game-title1">
+      <div class="github1"> 
+        <a href="https://github.com/yogesh28-git/MineSweeper"><i class="logo github fab fa-github-square"></i></a>
+      </div>
+      <div class="game-title">MINE SWEEPER (C++)</div>      
+    </div> 
+      <br>
+    <div class="game-description">
+      <ul>
+        <li>C++ Console Game of MineSweeper</li>
+        <li>OOPs concepts used</li>
+        <li>Datastructures like arrays, queues etc used</li>
+      </ul>
+    </div>
+    <hr class="hr">
+
+
+
+  </section>
+
+  <hr class="hr1">
+  <hr class="hr2">
+  <hr class="hr3">
+<div class="title-logo">
+  <a href="https://www.linkedin.com/in/yogesh-krishnan-s-44ba7714a/"><i class="logo fab fa-linkedin"></i></a>
+  <a href="https://github.com/yogesh28-git"><i class="logo fab fa-github-square"></i></a>
+  <a href="https://y0-0go.itch.io/"><i class="logo fab fa-itch-io"></i></a>
+  <a href="https://replit.com/@YogeshKrishnan"><img class="replit" src="../Homepage/Images/Repl.it_logo.png" alt="Yogesh image"></a>
+</div> 
+</div>
+</body>
+</html>
